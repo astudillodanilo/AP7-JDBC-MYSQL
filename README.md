@@ -96,7 +96,7 @@ Al finalizar este proyecto, el estudiante será capaz de:
 ## 🛠️ Requisitos previos
 
 - Java JDK 8 o superior
-- MySQL Server
+- MySQL Server - XAMP Maria BD
 - IDE (IntelliJ / Eclipse / VS Code)
 - Conocimientos básicos de Java
 
@@ -125,13 +125,45 @@ CREATE TABLE estudiantes (
 ---
 
 ## 🔌 Paso 3: Importar la Libreria Crear la conexión JDBC
+
+```java
 import java.sql.*;
 
-String url = "jdbc:mysql://localhost:3306/universidad";
-String user = "root";
-String password = "";
+String usuario="root";
+        String contra="";
+        String url="jdbc:mysql://localhost:3306/universidad"; // 1. Cadena del Driver (JDBC versions)
+        Connection cnx;
+        Statement st;
+        ResultSet rs;
 
-Connection conn = DriverManager.getConnection(url, user, password);
+        try {
+            // 2. Establish Connection
+            cnx = DriverManager.getConnection(url,usuario,contra);
+            System.out.println("Connected to database");
+            // 3. Create Statement
+            st = cnx.createStatement();
+            // 4. Execute Query
+            //CRUD - INSERT - SELECT - UPDATE - DELETE
+            //st.executeUpdate("INSERT INTO ESTUDIANTES(NOMBRE,CORREO) VALUES ('estudiante2','estudiante2@gmail.com')");
+            rs=st.executeQuery("SELECT * FROM ESTUDIANTES");
+            st.executeUpdate("UPDATE ESTUDIANTES SET NOMBRE='NUEVO_01' WHERE id=8");
+            rs=st.executeQuery("SELECT * FROM ESTUDIANTES");
+            //st.executeUpdate("DELETE FROM ESTUDIANTES WHERE id=7");
+            rs.next();
+            // 5. Process Results
+            do {
+                System.out.println(rs.getInt("id")+" : "+ rs.getString("nombre")+ " "+ rs.getString("correo"));
+            }while (rs.next());
+            // 6. Close resources
+            rs.close();
+            st.close();
+            cnx.close();
+            System.out.println("Disconnected from database");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
+    }
+```
 ---
 
