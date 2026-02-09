@@ -25,9 +25,8 @@ Esto te permite trabajar libremente sin modificar el repositorio original.
 3. Selecciona tu cuenta de GitHub
 4. GitHub creará una copia del repositorio en tu perfil
 
-📷 *Ejemplo visual:*
-
-![Video Crear Fork](https://www.youtube.com/watch?v=t1Ym6BzTH_M)
+📷 *Ver Video:*
+<iframe width="320" height="180" src="https://www.youtube.com/watch?v=t1Ym6BzTH_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
 
 ---
 
@@ -114,6 +113,7 @@ CREATE TABLE estudiantes (
   correo VARCHAR(150) NOT NULL
 );
 
+```
 ---
 
 ## ⚙️ Paso 2: Agregar driver JDBC (IntelliJ IDEA)
