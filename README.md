@@ -26,7 +26,8 @@ Esto te permite trabajar libremente sin modificar el repositorio original.
 4. GitHub creará una copia del repositorio en tu perfil
 
 📷 *Ver Video:*
-<iframe width="320" height="180" src="https://www.youtube.com/watch?v=t1Ym6BzTH_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t1Ym6BzTH_M?si=Tz4ipFT5P5VQORJ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
