@@ -14,7 +14,7 @@ Un **fork** es una copia del repositorio del profesor que se guarda en tu propia
 Esto te permite trabajar libremente sin modificar el repositorio original.
 
 📌 **Repositorio del profesor:**  
-👉 (Aquí el docente coloca la URL del repo original)
+👉 (https://github.com/astudillodanilo/AP7-JDBC-MYSQL.git)
 
 ---
 
@@ -27,7 +27,7 @@ Esto te permite trabajar libremente sin modificar el repositorio original.
 
 📷 *Ejemplo visual:*
 
-![Fork](https://docs.github.com/assets/cb-23088/images/help/repository/fork_button.png)
+![Video Crear Fork](https://www.youtube.com/watch?v=t1Ym6BzTH_M)
 
 ---
 
@@ -47,8 +47,8 @@ Una vez tengas el fork en tu cuenta:
 
 ```bash
 git clone https://github.com/tu-usuario/nombre-del-repo.git
-
-
+cd nombre-del-repo
+```
 
 # ☕ Java JDBC + MySQL  
 ## Conexión y CRUD básico (Guía práctica)
